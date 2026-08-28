@@ -3,6 +3,7 @@ import { ExternalLink } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import dealanImg from '../assets/img/dealan.png';
 import seblakImg from '../assets/img/seblak.png';
+import cattakeImg from '../assets/img/cattake.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -11,16 +12,16 @@ const Projects = () => {
       id: 1,
       title: "CatTake",
       description: "Aplikasi Web & Mobile Tracking Adopsi Kucing. Menyoroti pengembangan antarmuka interaktif dan integrasi fungsionalitas di berbagai platform.",
-      tech: ["React Native", "Vue.js", "Firebase"],
-      image: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      githubLink: "https://github.com/najmialifah/seblak-web",
+      tech: ["Expo", "Vue.js", "Firebase", "Node.js"],
+      image: cattakeImg,
+      githubLink: "https://github.com/zicofarry/CatTake",
       featured: true
     },
     {
       id: 2,
       title: "Dealan",
       description: "Sistem backend multi-service yang skalabel dan efisien. Menonjolkan kemampuan software engineering, arsitektur sistem, dan deployment terotomatisasi.",
-      tech: ["Go", "Docker", "CI/CD", "PostgreSQL"],
+      tech: ["Go", "Microservices", "Docker", "Jenkins", "Kubernetes"],
       image: dealanImg,
       githubLink: "https://github.com/najmialifah/Dealan",
       featured: false
@@ -29,7 +30,7 @@ const Projects = () => {
       id: 3,
       title: "Web Order UMKM Food",
       description: "Aplikasi pemesanan makanan berbasis web untuk membantu UMKM. Dilengkapi dengan antarmuka yang intuitif untuk memudahkan pelanggan dan pemilik usaha dalam mengelola pesanan.",
-      tech: ["React", "CSS Modules", "REST API"],
+      tech: ["React", "Figma", "REST API"],
       image: seblakImg,
       githubLink: "https://github.com/najmialifah/seblak-web",
       featured: false
