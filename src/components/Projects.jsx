@@ -1,6 +1,8 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
+import dealanImg from '../assets/img/dealan.png';
+import seblakImg from '../assets/img/seblak.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -11,22 +13,25 @@ const Projects = () => {
       description: "Aplikasi Web & Mobile Tracking Adopsi Kucing. Menyoroti pengembangan antarmuka interaktif dan integrasi fungsionalitas di berbagai platform.",
       tech: ["React Native", "Vue.js", "Firebase"],
       image: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      githubLink: "https://github.com/najmialifah/seblak-web",
       featured: true
     },
     {
       id: 2,
-      title: "Microservices Cloud Architecture",
+      title: "Dealan",
       description: "Sistem backend multi-service yang skalabel dan efisien. Menonjolkan kemampuan software engineering, arsitektur sistem, dan deployment terotomatisasi.",
       tech: ["Go", "Docker", "CI/CD", "PostgreSQL"],
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: dealanImg,
+      githubLink: "https://github.com/najmialifah/Dealan",
       featured: false
     },
     {
       id: 3,
-      title: "Anime Collection Repository",
-      description: "Aplikasi direktori dengan fokus pada eksplorasi antarmuka visual yang rapi, modern, dan pengalaman pengguna yang mulus.",
+      title: "Web Order UMKM Food",
+      description: "Aplikasi pemesanan makanan berbasis web untuk membantu UMKM. Dilengkapi dengan antarmuka yang intuitif untuk memudahkan pelanggan dan pemilik usaha dalam mengelola pesanan.",
       tech: ["React", "CSS Modules", "REST API"],
-      image: "https://images.unsplash.com/photo-1578632767115-351597cf2477?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: seblakImg,
+      githubLink: "https://github.com/najmialifah/seblak-web",
       featured: false
     }
   ];
@@ -46,7 +51,7 @@ const Projects = () => {
                     <a href="#" className="project-link" aria-label="View Live">
                       <ExternalLink size={20} />
                     </a>
-                    <a href="#" className="project-link" aria-label="View Source">
+                    <a href={project.githubLink || "#"} target="_blank" rel="noopener noreferrer" className="project-link" aria-label="View Source">
                       <FaGithub size={20} />
                     </a>
                   </div>
