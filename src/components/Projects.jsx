@@ -11,7 +11,7 @@ const Projects = () => {
     {
       id: 1,
       title: "CatTake",
-      description: "Aplikasi Web & Mobile Tracking Adopsi Kucing. Menyoroti pengembangan antarmuka interaktif dan integrasi fungsionalitas di berbagai platform.",
+      description: "Aplikasi Web & Mobile Adopsi Kucing. Menyoroti pengembangan antarmuka interaktif dan integrasi fungsionalitas di berbagai platform.",
       tech: ["Expo", "Vue.js", "Firebase", "Node.js"],
       image: cattakeImg,
       githubLink: "https://github.com/zicofarry/CatTake",
