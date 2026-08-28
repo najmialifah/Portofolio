@@ -11,10 +11,10 @@ const About = () => {
 
         <div className="marquee-container">
           <div className="marquee-content">
-            C    ⭑    C++    ⭑    Python    ⭑    HTML    ⭑    CSS    ⭑    JS    ⭑    React    ⭑    Vue.js    ⭑    Tailwind CSS    ⭑    
+            C        ⭑        C++        ⭑        Python        ⭑        HTML        ⭑        CSS        ⭑        JS        ⭑        TypeScript        ⭑        React        ⭑        Vue.js        ⭑        Next.js        ⭑        Tailwind CSS        ⭑        Node.js        ⭑        Go        ⭑        PostgreSQL        ⭑        Docker        ⭑        
           </div>
           <div className="marquee-content" aria-hidden="true">
-            C    ⭑    C++    ⭑    Python    ⭑    HTML    ⭑    CSS    ⭑    JS    ⭑    React    ⭑    Vue.js    ⭑    Tailwind CSS    ⭑    
+            C        ⭑        C++        ⭑        Python        ⭑        HTML        ⭑        CSS        ⭑        JS        ⭑        TypeScript        ⭑        React        ⭑        Vue.js        ⭑        Next.js        ⭑        Tailwind CSS        ⭑        Node.js        ⭑        Go        ⭑        PostgreSQL        ⭑        Docker        ⭑        
           </div>
         </div>
         

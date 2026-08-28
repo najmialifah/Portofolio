@@ -95,7 +95,7 @@
   font-weight: 500;
   color: var(--color-text-dark);
   line-height: 1;
-  animation: marquee 15s linear infinite;
+  animation: marquee 40s linear infinite;
   white-space: pre;
   padding-right: 0;
   flex-shrink: 0;
