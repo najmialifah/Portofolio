@@ -21,8 +21,7 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p className="intro-text">
-              I am a Computer Science undergraduate at FPMIPA Universitas Pendidikan Indonesia,
-              passionate about end-to-end software development.
+              I am a Computer Science at Universitas Pendidikan Indonesia 
             </p>
             <p>
               My journey in tech is driven by a fascination with how systems work under the hood, 
@@ -30,8 +29,10 @@ const About = () => {
               I bridge the gap between complex system architecture and seamless user experiences.
             </p>
             <p>
-              Whether I'm architecting a backend microservice or crafting a pixel-perfect React frontend, 
-              I bring dedication, logic, and creativity to every project I touch.
+              My journey is driven by two simple things: a fascination with how 
+              technology constantly evolves and a genuine love for seeing beautiful things. 
+              Whether I'm building the foundation or crafting the visual experience, I bring dedication, 
+              logic, and creativity to every project I touch.
             </p>
           </div>
           
