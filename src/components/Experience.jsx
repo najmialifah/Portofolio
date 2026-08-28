@@ -19,7 +19,19 @@ const Experience = () => {
       title: "Bendahara Divisi Pengembangan Organisasi",
       organization: "BEM Keluarga Mahasiswa Komputer (Kemakom) UPI",
       period: "March 2025 - December 2025",
-      description: "Responsible for the management and financial reporting of the organization, ensuring transparency and accountability in every transaction.",
+      description: "Responsible for the management and financial reporting of the organization, ensuring transparency and accountability in every transaction. Handled the financial operations for the following programs:",
+      programs: [
+        "Upgrading",
+        "Monitoring and Evaluation (Monev)",
+        "Interface",
+        "Registrasi Anggota Muda (RAM)",
+        "Mokaku Program Studi (Mokaprodi)",
+        "Mentoring",
+        "Koordinasi Lapangan (Koorlap)",
+        "Bimbingan Mahasiswa Ilmu Komputer (BMAIL)",
+        "Kemakom Leadership Training (KLT)",
+        "Pelantikan Anggota Biasa (Plasa)"
+      ],
       icon: <Briefcase size={20} />
     },
     {
@@ -51,6 +63,13 @@ const Experience = () => {
                 <h3>{exp.title}</h3>
                 <h4>{exp.organization}</h4>
                 <p>{exp.description}</p>
+                {exp.programs && (
+                  <ul className="timeline-programs">
+                    {exp.programs.map((program, i) => (
+                      <li key={i}>{program}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           ))}

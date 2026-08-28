@@ -129,6 +129,18 @@
   font-size: 0.95rem;
 }
 
+.timeline-programs {
+  margin-top: 12px;
+  padding-left: 20px;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  list-style-type: disc;
+}
+
+.timeline-programs li {
+  margin-bottom: 4px;
+}
+
 @media (max-width: 768px) {
   .timeline::after {
     left: 31px;
