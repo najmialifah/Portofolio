@@ -57,7 +57,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <a href="#home" className="logo" onClick={closeMobileMenu} aria-label="Home">
           <span className="logo-text">Nana</span>
-          <svg className="star-logo" width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" overflow="visible">
+          <svg className="star-logo" width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" overflow="visible">
             <defs>
               <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stopColor="#FF9A9E" />
