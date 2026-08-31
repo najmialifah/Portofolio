@@ -187,10 +187,11 @@
   margin: 0;
 }
 
-/* Footer / Back Navigation */
-.detail-footer {
-  margin-top: 60px;
-  text-align: center;
+/* Top Nav / Back Navigation */
+.detail-top-nav {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .detail-back-btn {

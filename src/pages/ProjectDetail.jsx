@@ -73,6 +73,12 @@ const ProjectDetail = () => {
 
   return (
     <div className={`project-detail-container ${isVisible ? 'fade-in-up' : 'hidden'}`}>
+      <div className="detail-top-nav">
+        <button onClick={() => navigate('/')} className="btn btn-primary detail-back-btn bounce-hover">
+          <ArrowLeft size={18} /> Back to Portfolio
+        </button>
+      </div>
+
       <div className="detail-header">
         <h1 className="detail-title">{project.title}</h1>
         <p className="detail-short-desc">{project.shortDesc}</p>
@@ -133,12 +139,6 @@ const ProjectDetail = () => {
         <div className="conclusion-card">
           <p>{project.conclusion}</p>
         </div>
-      </div>
-
-      <div className="detail-footer">
-        <button onClick={() => navigate('/')} className="btn btn-primary detail-back-btn bounce-hover">
-          <ArrowLeft size={18} /> Back to Portfolio
-        </button>
       </div>
     </div>
   );
