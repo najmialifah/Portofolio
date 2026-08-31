@@ -111,17 +111,10 @@ const ProjectDetail = () => {
       </div>
 
       <div className="detail-section">
-        <h2 className="detail-subtitle">Why It Was Built</h2>
+        <h2 className="detail-subtitle">Overview</h2>
         <div className="detail-text-content">
           <p>{project.background}</p>
-        </div>
-      </div>
-
-
-
-      <div className="detail-section conclusion-section">
-        <h2 className="detail-subtitle">Key Takeaways</h2>
-        <div className="conclusion-card">
+          <br />
           <p>{project.conclusion}</p>
         </div>
       </div>
