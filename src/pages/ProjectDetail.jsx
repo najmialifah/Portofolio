@@ -96,13 +96,7 @@ const ProjectDetail = () => {
             <span className="metadata-value">{project.duration}</span>
           </div>
         </div>
-        <div className="metadata-item">
-          <User className="metadata-icon" size={20} />
-          <div>
-            <span className="metadata-label">Role</span>
-            <span className="metadata-value">{project.role}</span>
-          </div>
-        </div>
+
         <div className="metadata-item">
           <Code className="metadata-icon" size={20} />
           <div>
@@ -123,16 +117,7 @@ const ProjectDetail = () => {
         </div>
       </div>
 
-      <div className="detail-section gallery-section">
-        <h2 className="detail-subtitle">Documentation & Gallery</h2>
-        <div className="gallery-grid">
-          {project.gallery.map((img, index) => (
-            <div className="gallery-item" key={index}>
-              <img src={img} alt={`Gallery ${index + 1}`} />
-            </div>
-          ))}
-        </div>
-      </div>
+
 
       <div className="detail-section conclusion-section">
         <h2 className="detail-subtitle">Key Takeaways</h2>
