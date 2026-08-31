@@ -1,0 +1,228 @@
+.project-detail-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 120px 20px 80px;
+  background-color: #FFFFFF;
+  position: relative;
+  z-index: 10;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.project-detail-container.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.project-detail-container.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header */
+.detail-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.detail-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 16px;
+}
+
+.detail-short-desc {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Hero Image */
+.hero-image-wrapper {
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.detail-hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.hero-image-wrapper:hover .detail-hero-image {
+  transform: scale(1.02);
+}
+
+/* Metadata */
+.metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  background-color: var(--color-surface);
+  padding: 32px;
+  border-radius: var(--radius-md);
+  margin-bottom: 60px;
+  box-shadow: var(--shadow-sm);
+}
+
+.metadata-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.metadata-icon {
+  color: var(--color-text-pink);
+  margin-top: 4px;
+}
+
+.metadata-label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.metadata-value {
+  display: block;
+  font-size: 1rem;
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
+
+.metadata-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.tech-badge {
+  background-color: var(--color-secondary);
+  color: var(--color-text-pink);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Sections General */
+.detail-section {
+  margin-bottom: 60px;
+}
+
+.detail-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 24px;
+  position: relative;
+  display: inline-block;
+}
+
+.detail-subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-full);
+}
+
+.detail-text-content {
+  font-size: 1.05rem;
+  color: var(--color-text-dark);
+  line-height: 1.8;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Conclusion */
+.conclusion-card {
+  background-color: rgba(250, 218, 221, 0.4); /* soft pink transparent */
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  border-left: 5px solid var(--color-text-pink);
+  box-shadow: var(--shadow-sm);
+}
+
+.conclusion-card p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Footer / Back Navigation */
+.detail-footer {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.detail-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  padding: 14px 32px;
+}
+
+.bounce-hover {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s, box-shadow 0.3s;
+}
+
+.bounce-hover:hover {
+  transform: translateY(-5px) scale(1.02);
+  background-color: var(--color-text-pink);
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .detail-title {
+    font-size: 2.2rem;
+  }
+  
+  .metadata-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}

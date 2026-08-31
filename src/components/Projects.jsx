@@ -1,6 +1,7 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import dealanImg from '../assets/img/dealan.png';
 import seblakImg from '../assets/img/seblak.png';
 import cattakeImg from '../assets/img/cattake.png';
@@ -49,9 +50,9 @@ const Projects = () => {
                 <img src={project.image} alt={project.title} />
                 <div className="project-overlay">
                   <div className="project-links">
-                    <a href="#" className="project-link" aria-label="View Live">
+                    <Link to={`/project/${project.id}`} className="project-link" aria-label="View Details">
                       <ExternalLink size={20} />
-                    </a>
+                    </Link>
                     <a href={project.githubLink || "#"} target="_blank" rel="noopener noreferrer" className="project-link" aria-label="View Source">
                       <FaGithub size={20} />
                     </a>

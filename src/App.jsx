@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Hero from './components/Hero';
+import ProjectDetail from './pages/ProjectDetail';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
 
-function App() {
+function Home() {
   useEffect(() => {
     const observerOptions = {
       root: null,
@@ -33,12 +35,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app-container">
-      <div className="animated-background">
-        <div className="bg-blob bg-blob-1"></div>
-        <div className="bg-blob bg-blob-2"></div>
-        <div className="bg-blob bg-blob-3"></div>
-      </div>
+    <>
       <Navbar />
       <div className="reveal">
         <Hero />
@@ -59,6 +56,28 @@ function App() {
       <div className="reveal">
         <Footer />
       </div>
+    </>
+  );
+}
+
+function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  return (
+    <div className="app-container">
+      <div className="animated-background">
+        <div className="bg-blob bg-blob-1"></div>
+        <div className="bg-blob bg-blob-2"></div>
+        <div className="bg-blob bg-blob-3"></div>
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project/:id" element={<ProjectDetail />} />
+      </Routes>
     </div>
   );
 }
